@@ -38,10 +38,10 @@ export const defaultPreferences: UserPreferences = {
   },
   notifications: {
     discord: {
-      position: 'top-right',
+      position: 'center',
       textColor: '#87CEEB',
       enabled: false,
-      showOnce: true,
+      showOnce: false,
       message: 'Our previous Discord server has been terminated. Please join our new community server for continued support and updates.',
       title: 'Discord Server Notice',
       discordLink: 'https://discord.gg/oasisud'
