@@ -40,7 +40,7 @@ export const DiscordNotice = () => {
 
   return (
     <div className={`z-50 ${position}`}>
-      <div className={`${noticeClass} bg-zinc-900/95 backdrop-blur-sm border border-sky-500/20 rounded-lg p-4 shadow-lg animate-fade-in`}>
+      <div className={`${noticeClass} bg-zinc-900/95 backdrop-blur-sm border border-red-500/20 rounded-lg p-4 shadow-lg animate-fade-in`}>
         <div className="flex items-start justify-between">
           <div className="flex-1 mr-4">
             <h3 
