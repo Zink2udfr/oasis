@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Overscroll Background Color */
+html {
+  background-color: rgb(24 24 27); /* zinc-900 */
+}
+
+/* Animations */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-300px * 4)); }
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.3; }
+}
+
+/* Animation Classes */
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+/* Gradients */
+.slider-gradient-left {
+  background: linear-gradient(to right, rgb(24, 24, 27) 0%, transparent 100%);
+}
+
+.slider-gradient-right {
+  background: linear-gradient(to left, rgb(24, 24, 27) 0%, transparent 100%);
+}
