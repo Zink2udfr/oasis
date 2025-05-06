@@ -40,7 +40,7 @@ export const defaultPreferences: UserPreferences = {
     discord: {
       position: 'top-right',
       textColor: '#87CEEB',
-      enabled: true,
+      enabled: false,
       showOnce: true,
       message: 'Our previous Discord server has been terminated. Please join our new community server for continued support and updates.',
       title: 'Discord Server Notice',
